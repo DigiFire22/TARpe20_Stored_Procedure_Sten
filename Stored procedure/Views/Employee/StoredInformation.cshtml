@@ -1,0 +1,61 @@
+﻿<body style="padding-top: 10px">
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="panel-heading">
+            <h3>StoredInformation</h3>
+        </div>
+        <form asp-controller="Employee" asp-action="SearchWithDynamics">
+            <div>
+                <label for="Criminal_Record">Criminal Record</label>
+                <br />
+                <input type="text" name="Criminal_Record" placeholder="Criminal_Record" />
+            </div>
+            <br />
+            <div>
+                <label for="Address">Address</label>
+                <br />
+                <input type="text" name="Address" placeholder="Address" />
+            </div>
+            <br />
+            <div>
+                <label for="Phone_Number">Phone_Number</label>
+                <br />
+                <input type="text" name="Phone_Number" placeholder="Phone_Number" />
+            </div>
+            <br />
+            <div>
+                <label for="Opinion_On_Personality">Opinion On Personality</label>
+                <br />
+                <input type="text" name="Opinion_On_Personality" placeholder="Opinion_On_Personality" />
+            </div>
+            <div>
+                <label for="Age">Age</label>
+                <br />
+                <input type="number" name="Age" placeholder="Age" />
+            </div>
+            <br />
+            <input type="submit" value="SearchWithDynamics" />
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Criminal_Record</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone_Number</th>
+                    <th scope="col">Opinion_On_Personality</th>
+                    <th scope="col">Age</th>
+                </tr>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                    <tr>
+                        <td>@employee.Criminal_Record</td>
+                        <td>@employee.Address</td>
+                        <td>@employee.Phone_Number</td>
+                        <td>@employee.Opinion_On_Personality</td>
+                        <td>@employee.Age</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>

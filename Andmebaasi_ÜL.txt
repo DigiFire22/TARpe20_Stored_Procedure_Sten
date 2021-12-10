@@ -1,0 +1,12 @@
+1. Teha ise C# koodi üks vaade. 
+2. Teha controllerisse get ja Post Meetod.
+3. Mõlemad meetodid kutsuvad esile mingid andmed läbi store proceduri. 
+4. SQL-i serverisse teete store proceduri.
+5. mis annab tulemuse. Ise peate tegema täiesti uue Tabeli ja teise nimega.
+Kindlasti peab olema 5 muutujat tabelise ja kokku 10 rida andmeid. 
+6. C# koodi saab andmeid filteerida.
+
+Töö Saata: Ingvar.dereshivski@tthk.ee
+1. C# kood panna enda Git Hub'i Kontole ülesse ja saata projekti link.
+2. SQL koodi panna word dokumendile.
+3. Projektil olevast tulemusest teha print screen
